@@ -1,85 +1,37 @@
 {
   "students": [
     {
-      "id": "0c7a",
+      "id": "8344",
+      "name": "ramesh",
+      "email": "r@gmail.com",
+      "role": "student"
+    },
+    {
+      "id": "4f28",
+      "name": "mugesh",
+      "email": "s@gmail.com",
+      "role": "student"
+    },
+    {
+      "id": "ea41",
+      "name": "mugesh",
+      "email": "m@gmail.com",
+      "role": "student"
+    },
+    {
+      "id": "0a9a",
       "name": "m",
       "email": "m@m",
       "role": "student"
     },
     {
-      "id": "ce5b",
-      "name": "mmmm",
-      "email": "m@gmail",
-      "role": "student"
-    },
-    {
-      "id": "662c",
-      "name": "mmmm",
-      "email": "m@gmail",
-      "role": "student"
-    },
-    {
-      "id": "d8ed",
-      "name": "mugesh",
-      "email": "m@g",
-      "role": "student"
-    },
-    {
-      "id": "349a",
-      "name": "mugesh",
-      "email": "m@g",
-      "role": "student"
-    },
-    {
-      "id": "e4eb",
-      "name": "mugesh",
-      "email": "m@g",
-      "role": "student"
-    },
-    {
-      "id": "3e98",
-      "name": "mugesh",
-      "email": "m@g",
-      "role": "student"
-    },
-    {
-      "id": "3955",
-      "name": "mugesh",
-      "email": "m@g",
-      "role": "student"
-    },
-    {
-      "id": "0343",
-      "name": "mugesh",
-      "email": "m@g",
+      "id": "fb24",
+      "name": "m",
+      "email": "m@m",
       "role": "student"
     }
   ],
   "teachers": [
-    {
-      "id": "3cb7",
-      "name": "mm",
-      "email": "m@m",
-      "role": "teacher"
-    },
-    {
-      "id": "31d3",
-      "name": "Mugesh",
-      "email": "mugesh@gmail.com",
-      "role": "teacher"
-    },
-    {
-      "id": "66a3",
-      "name": "sa",
-      "email": "m@g",
-      "role": "teacher"
-    },
-    {
-      "id": "0507",
-      "name": "sa",
-      "email": "m@g",
-      "role": "teacher"
-    },
     {
       "id": "28e4",
       "name": "mugesh",

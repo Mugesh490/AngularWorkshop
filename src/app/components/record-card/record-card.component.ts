@@ -1,6 +1,7 @@
-import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
-import { DataService } from 'src/app/services/data.service';
+import { Component, OnInit,Input,Output,EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { DataService } from '../../service/data.service';
 import { ActivatedRoute } from '@angular/router';
+import { SharedDataService } from 'src/app/service/data/shared-data.service';
 
 @Component({
   selector: 'app-record-card',
@@ -9,18 +10,20 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class RecordCardComponent implements OnInit {
 
-  @Input() searchTerm:string='';
+  searchTerm:string='';
   @Output() delete=new EventEmitter<number>();
-  records:any[]=[];
+  @Input() records:any[]=[];
   role:string='';
 
-  constructor(private route:ActivatedRoute,private dataservice:DataService) { }
+  constructor(private route:ActivatedRoute,private dataservice:DataService, private sharedData:SharedDataService) { }
 
   ngOnInit(): void {
     this.route.url.subscribe(url=>{
       this.role=url[0].path;
       this.loadRecords();
     });
+    this.sharedData.message.subscribe((message)=>this.searchTerm=message);
+    console.log(this.searchTerm);
   }
 
   loadRecords(){
@@ -34,5 +37,7 @@ export class RecordCardComponent implements OnInit {
       this.loadRecords();
     });
   }
-
+  OnChanges(changes:SimpleChanges){
+    console.log(this.searchTerm);
+  }
 }

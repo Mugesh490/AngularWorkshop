@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/services/data.service';
+import { Component, OnInit, Output,Input } from '@angular/core';
+import { DataService } from '../../service/data.service';
+import { SharedDataService } from 'src/app/service/data/shared-data.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -12,19 +13,21 @@ export class DashboardComponent implements OnInit {
   searchTerm:string='';
   role:string='student';
 
-  constructor(private dataservice:DataService) { }
+  constructor(private dataservice:DataService , private sharedData:SharedDataService) { }
 
   ngOnInit(): void {
     this.loadRecords();
   }
 
   loadRecords(){
+    console.log("Hello from loadrecords")
     this.dataservice.getRecords(this.role).subscribe(data=>{
       this.records=data;
     });
   }
 
   showStudents(){
+    console.log("from show students")
     this.role='student';
     this.loadRecords();
   }
@@ -38,6 +41,9 @@ export class DashboardComponent implements OnInit {
     this.dataservice.deleteRecord(this.role,id).subscribe(()=>{
       this.loadRecords();
     });
+  }
+  search=()=>{
+    this.sharedData.changeMessage(this.searchTerm);
   }
 
 }
