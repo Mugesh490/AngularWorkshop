@@ -1,0 +1,9 @@
+<mat-card *ngFor="let record of records" class="record-card">
+    <mat-card-title>{{record.name}}</mat-card-title>
+    <mat-card-content>
+        <p>{{record.email}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button color="warn" (click)="delete.emit(record.id)">Delete</button>
+    </mat-card-actions>
+</mat-card>

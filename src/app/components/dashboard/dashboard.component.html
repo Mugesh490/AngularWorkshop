@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+    <mat-form-field class="search-bar">
+        <mat-label>Search</mat-label>
+        <input matInput placeholder="Search..">
+</mat-form-field>
+<button mat-button (click)="showStudents()">Student Record</button>
+<button mat-button (click)="showTeachers()">Teacher Record</button>
+</mat-toolbar>
+
+<app-record-card [records]="records" (delete)="deleteRecord($event)"></app-record-card>

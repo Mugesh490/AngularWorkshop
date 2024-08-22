@@ -1,27 +1,18 @@
-# StudentTeacherDataPortal
+Student Teacher Data Portal
+-  create one component to take student & teacher details like name, mail, address, role like teacher / student etc. on submit it should call api & store data
+-  create one dashboard where we have header with search bar & two buttons Student Record & Teacher Record
+create one component to display data of student & teacher in card format
+By default it will display data of Students
+-  If click on Teachers Record button then instead of students record it will display teachers record
+In header search add search functionality
+In data details cards have one delete button. On click of that button it should delete the record
+For storing the data & fetching data use JSON server
+ 
+concepts covered -
+routes & nesting routes
+binding
+data sharing all 3 types
+pipe
+services, dependency injection
+json server
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
