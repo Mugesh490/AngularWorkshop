@@ -1,8 +1,12 @@
-<app-student-teacher-form></app-student-teacher-form>
-<br>
-<br>
-<app-dashboard></app-dashboard>
+<mat-toolbar color="primary">
+  <span>Student Teacher Data Portal</span>
+  <span class="spacer"></span>
+  <button mat-button [routerLink]="['/form']">Add Record</button>
+</mat-toolbar>
+<div class="content">
+  <router-outlet></router-outlet>
+</div>
 
-<br>
-<br>
-<app-record-card></app-record-card>
+
+
+

@@ -22,7 +22,6 @@ export class StudentTeacherFormComponent implements OnInit {
 
   onSubmit(){
     if(this.form.valid){
-      console.log(this.form.value)
       this.dataservice.addRecord(this.form.value).subscribe();
     }
 

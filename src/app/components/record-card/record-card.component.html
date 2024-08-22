@@ -1,4 +1,4 @@
-<mat-card *ngFor="let record of records" class="record-card">
+<mat-card *ngFor="let record of records | filter:searchTerm" class="record-card">
     <mat-card-title>{{record.name}}</mat-card-title>
     <mat-card-content>
         <p>{{record.email}}</p>

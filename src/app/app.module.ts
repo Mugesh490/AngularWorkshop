@@ -8,13 +8,14 @@ import { StudentTeacherFormComponent } from './components/student-teacher-form/s
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RecordCardComponent } from './components/record-card/record-card.component';
 import { FilterPipe } from './pipes/filter.pipe';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { MatSelectModule } from '@angular/material/select';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +35,10 @@ import { MatSelectModule } from '@angular/material/select';
     MatToolbarModule,
     MatCardModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
