@@ -9,4 +9,24 @@
 .main-content{
     margin-left: 500px;
 }
-  
+
+@media (max-width: 768px) {
+  .main-content {
+      margin-left: 20px;
+  }
+
+  .content {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+      margin-left: 10px;
+  }
+
+  .content {
+      padding: 5px;
+  }
+}
+

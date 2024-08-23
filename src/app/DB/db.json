@@ -29,21 +29,6 @@
       "address": "hello"
     },
     {
-      "id": "1651",
-      "email": "qwerty123@samp.com",
-      "password": "qwerty123"
-    },
-    {
-      "id": "4213",
-      "email": "qwerty123@samp.com",
-      "password": "qwerty123"
-    },
-    {
-      "id": "a16f",
-      "email": "qwerty123@samp.com",
-      "password": "qwerty123"
-    },
-    {
       "id": "8c8e",
       "name": "mugesh",
       "email": "mugesh@gmail.com",
@@ -51,16 +36,23 @@
       "role": "student"
     },
     {
-      "id": "3f0e",
-      "name": "mugesh",
-      "email": "mugesh@gmail.com",
-      "address": "Chennai",
-      "role": "stud"
-    },
-    {
       "id": "cc0d",
       "name": "Faizal",
       "email": "faizal@gmail.com",
+      "role": "student",
+      "address": "pmv"
+    },
+    {
+      "id": "275e",
+      "name": "digit",
+      "email": "di@m",
+      "role": "student",
+      "address": "blr"
+    },
+    {
+      "id": "ddcb",
+      "name": "madhu",
+      "email": "madhu@gmail.com",
       "role": "student",
       "address": "pmv"
     }
@@ -107,6 +99,20 @@
       "email": "jey@gmail.com",
       "role": "teacher",
       "address": "pmv"
+    },
+    {
+      "id": "5606",
+      "name": "thangam",
+      "email": "thangam@gmail.com",
+      "role": "teacher",
+      "address": "tkz"
+    },
+    {
+      "id": "94ae",
+      "name": "Jack",
+      "email": "jack@gmail.com",
+      "role": "teacher",
+      "address": "HongKong"
     }
   ]
 }

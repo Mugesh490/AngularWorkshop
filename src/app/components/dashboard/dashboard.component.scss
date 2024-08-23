@@ -13,3 +13,40 @@
 .add-btn{
     margin-left:90px;
 }
+
+@media (max-width: 768px) {
+    .search-bar {
+        margin-left: 50px;
+    }
+
+    .student-btn {
+        margin-left: 50px;
+    }
+
+    .teacher-btn {
+        margin-left: 50px;
+    }
+
+    .add-btn {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar {
+        margin-left: 20px;
+    }
+
+    .student-btn {
+        margin-left: 20px;
+    }
+
+    .teacher-btn {
+        margin-left: 20px;
+    }
+
+    .add-btn {
+        margin-left: 15px;
+    }
+}
+

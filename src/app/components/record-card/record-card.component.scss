@@ -1,0 +1,33 @@
+.record-container{
+    margin-top:15px;
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.record-card{
+    margin:2.5%;
+}
+
+
+@media (max-width: 1024px) {
+    .record-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .record-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .record-container {
+        grid-template-columns: 1fr;
+    }
+
+    .record-card {
+        margin: 5%;
+    }
+}

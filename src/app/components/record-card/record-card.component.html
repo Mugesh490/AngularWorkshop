@@ -1,3 +1,4 @@
+<div class="record-container">
 <mat-card *ngFor="let record of records | filter:searchTerm" class="record-card">
     <mat-card-title>Name:{{record.name}}</mat-card-title>
     <mat-card-content>
@@ -8,3 +9,4 @@
         <button mat-button color="warn" (click)="delete.emit(record.id)">Delete</button>
     </mat-card-actions>
 </mat-card>
+</div>

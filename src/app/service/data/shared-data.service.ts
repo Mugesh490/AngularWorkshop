@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class SharedDataService {
 
   constructor() { }
-  message=new BehaviorSubject("message from sharedData");
+  message=new BehaviorSubject("");
   currentMessage=this.message.asObservable();
 
   changeMessage=(message:any)=>{
