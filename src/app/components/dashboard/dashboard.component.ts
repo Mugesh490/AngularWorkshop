@@ -20,14 +20,12 @@ export class DashboardComponent implements OnInit {
   }
 
   loadRecords(){
-    console.log("Hello from loadrecords")
     this.dataservice.getRecords(this.role).subscribe(data=>{
       this.records=data;
     });
   }
 
   showStudents(){
-    console.log("from show students")
     this.role='student';
     this.loadRecords();
   }

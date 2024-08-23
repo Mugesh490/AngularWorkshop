@@ -1,24 +1,48 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+<mat-card class="form-container">
+    <mat-card-content class="matcard-cnt">
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="header-content">
+        <mat-label>Registration Form</mat-label>
+    </div>
+    <br>
     <div>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" style="width:100%">
             <mat-label>Name</mat-label>
             <input matInput formControlName="name" required>
         </mat-form-field>
     </div>
     <div>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" style="width:100%">
             <mat-label>Email</mat-label>
             <input matInput type="email" formControlName="email" required>
         </mat-form-field>
     </div>
     <div>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" style="width:100%">
+            <mat-label>Address</mat-label>
+            <input matInput formControlName="address" required>
+        </mat-form-field>
+    </div>
+    <!-- <div>
+        <mat-form-field appearance="fill" style="width:100%">
             <mat-label>Role</mat-label>
             <mat-select formControlName="role" required>
                 <mat-option value="student">Student</mat-option>
                 <mat-option value="teacher">Teacher</mat-option>
             </mat-select>
+
         </mat-form-field>
+    </div> -->
+    
+    <div class="role-class">
+        <mat-label>Role : </mat-label>
+        <mat-radio-group formControlName="role" required>
+            <mat-radio-button value="student">Student</mat-radio-button>
+            <mat-radio-button value="teacher">Teacher</mat-radio-button>
+        </mat-radio-group>
+
     </div>
-    <button mat-raised-button color="primary" type="submit">Submit</button>
+    <button mat-raised-button color="primary" type="submit" class="sub-btn" [disabled]="!form.valid">Register</button>
 </form>
+</mat-card-content>
+</mat-card>

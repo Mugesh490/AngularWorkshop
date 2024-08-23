@@ -1,42 +1,112 @@
 {
   "students": [
     {
-      "id": "8344",
-      "name": "ramesh",
-      "email": "r@gmail.com",
-      "role": "student"
+      "id": "bba1",
+      "name": "Mugesh",
+      "email": "mugesh@gmail.com",
+      "role": "student",
+      "address": "Chennai"
     },
     {
-      "id": "4f28",
+      "id": "63f0",
+      "name": "Sai",
+      "email": "sai@gmail.com",
+      "role": "student",
+      "address": "Chennai"
+    },
+    {
+      "id": "71ff",
+      "name": "Saravanan",
+      "email": "Saravanan@gmail.com",
+      "role": "student",
+      "address": "Kanyakumari"
+    },
+    {
+      "id": "0ab5",
+      "name": "heloo",
+      "email": "hellooo@gmail.com",
+      "role": "student",
+      "address": "hello"
+    },
+    {
+      "id": "1651",
+      "email": "qwerty123@samp.com",
+      "password": "qwerty123"
+    },
+    {
+      "id": "4213",
+      "email": "qwerty123@samp.com",
+      "password": "qwerty123"
+    },
+    {
+      "id": "a16f",
+      "email": "qwerty123@samp.com",
+      "password": "qwerty123"
+    },
+    {
+      "id": "8c8e",
       "name": "mugesh",
-      "email": "s@gmail.com",
+      "email": "mugesh@gmail.com",
+      "address": "Chennai",
       "role": "student"
     },
     {
-      "id": "ea41",
+      "id": "3f0e",
       "name": "mugesh",
-      "email": "m@gmail.com",
-      "role": "student"
+      "email": "mugesh@gmail.com",
+      "address": "Chennai",
+      "role": "stud"
     },
     {
-      "id": "0a9a",
-      "name": "m",
-      "email": "m@m",
-      "role": "student"
-    },
-    {
-      "id": "fb24",
-      "name": "m",
-      "email": "m@m",
-      "role": "student"
+      "id": "cc0d",
+      "name": "Faizal",
+      "email": "faizal@gmail.com",
+      "role": "student",
+      "address": "pmv"
     }
   ],
   "teachers": [
     {
-      "id": "28e4",
-      "name": "mugesh",
-      "email": "m@gmail",
-      "role": "teacher"
+      "id": "7470",
+      "name": "sps",
+      "email": "sps@gmail.com",
+      "role": "teacher",
+      "address": "chrompet"
+    },
+    {
+      "id": "69d1",
+      "name": "ramprabhu",
+      "email": "ramprabhu@gmail.com",
+      "role": "teacher",
+      "address": "coimbatore"
+    },
+    {
+      "id": "80f3",
+      "name": "Karpagavalli",
+      "email": "karpagavalli@gmail.com",
+      "role": "teacher",
+      "address": "Pudukottai"
+    },
+    {
+      "id": "254b",
+      "name": "Murugesan",
+      "email": "murugesan@gmail.com",
+      "role": "teacher",
+      "address": "Pudukkottai"
+    },
+    {
+      "id": "7d56",
+      "name": "teacher",
+      "email": "teacher@t",
+      "role": "teacher",
+      "address": "teacher"
+    },
+    {
+      "id": "e3c4",
+      "name": "jey",
+      "email": "jey@gmail.com",
+      "role": "teacher",
+      "address": "pmv"
     }
   ]
 }

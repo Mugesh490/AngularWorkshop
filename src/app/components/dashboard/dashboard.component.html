@@ -1,10 +1,11 @@
-<mat-toolbar color="primary">
+<mat-toolbar color="primary" class="dash-content">
     <mat-form-field class="search-bar">
         <mat-label>Search</mat-label>
-        <input matInput [(ngModel)]="searchTerm" (ngModelChange)="search()" placeholder="Search..">
+        <input matInput [(ngModel)]="searchTerm" (ngModelChange)="search()" placeholder="Search">
 </mat-form-field>
-<button mat-button (click)="showStudents()">Student Record</button>
-<button mat-button (click)="showTeachers()">Teacher Record</button>
+<button mat-button (click)="showStudents()" class="student-btn">Student Record</button>
+<button mat-button (click)="showTeachers()" class="teacher-btn">Teacher Record</button>
+<button mat-button [routerLink]="['/form']" class="add-btn">Add Record</button>
 </mat-toolbar>
 
 <app-record-card [records]="records" (delete)="deleteRecord($event)"></app-record-card>
